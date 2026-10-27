@@ -1,0 +1,38 @@
+{
+  "name": "edutrack-crm",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n WEB,API -c cyan,magenta \"WEB_PORT=3002 vite --host 0.0.0.0\" \"PORT=3001 node server/index.js\"",
+    "client": "WEB_PORT=3002 vite --host 0.0.0.0",
+    "server": "PORT=3001 node server/index.js",
+    "build": "vite build",
+    "test": "vitest run",
+    "preview": "vite preview --host 0.0.0.0 --port 3002",
+    "db:init": "node server/init-db.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.548.0",
+    "pg": "^8.16.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.5",
+    "recharts": "^3.4.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^9.2.1",
+    "jsdom": "^27.4.0",
+    "vite": "^7.1.12",
+    "vitest": "^3.2.7"
+  }
+}
