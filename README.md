@@ -4,6 +4,12 @@ A complete, responsive training-institute CRM built with React + Vite, Express, 
 
 > The source repository did not contain the reference screenshot file, so the implementation follows the supplied visual specification: a white/black SaaS shell, 255px fixed sidebar, subtle borders, 12–16px radii, compact icons, restrained red accent, and spacious metric cards.
 
+## Live preview
+
+**https://edutrack-crm-a222cf6f.vercel.app**
+
+This is a public Vercel deployment of the same app. It serves the production React build from a pinned, CDN-backed bundle and runs in clearly labeled browser demo mode, with no database connected. The earlier sandbox URL `https://3002-isflgdls8rogaw9i11w3d.e2b.app` is not publicly usable because the E2B proxy requires an `e2b-traffic-access-token` header that a plain browser link cannot supply; use the Vercel link instead.
+
 ## Quick start
 
 ```bash
