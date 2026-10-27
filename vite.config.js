@@ -10,7 +10,8 @@ const apiProxy = {
   },
 };
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? './' : '/',
   plugins: [react()],
   build: {
     rollupOptions: {
@@ -38,4 +39,4 @@ export default defineConfig({
     allowedHosts: true,
     proxy: apiProxy,
   },
-});
+}));
